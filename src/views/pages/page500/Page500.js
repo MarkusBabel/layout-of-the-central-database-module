@@ -19,17 +19,17 @@ const Page500 = () => {
           <CCol md={6}>
             <span className="clearfix">
               <h1 className="float-start display-3 me-4">500</h1>
-              <h4 className="pt-3">Houston, we have a problem!</h4>
+              <h4 className="pt-3">Х'юстон, у нас проблема!</h4>
               <p className="text-body-secondary float-start">
-                The page you are looking for is temporarily unavailable.
+                Сторінка, яку ви шукали, тимчасово недоступна.
               </p>
             </span>
             <CInputGroup className="input-prepend">
               <CInputGroupText>
                 <CIcon icon={cilMagnifyingGlass} />
               </CInputGroupText>
-              <CFormInput type="text" placeholder="What are you looking for?" />
-              <CButton color="info">Search</CButton>
+              <CFormInput type="text" placeholder="Що ви шукаєте?" />
+              <CButton color="info">Пошук</CButton>
             </CInputGroup>
           </CCol>
         </CRow>
