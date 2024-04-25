@@ -11,3 +11,5 @@ createRoot(document.getElementById('root')).render(
     <App />
   </Provider>,
 )
+
+document.title = "Модуль Центральної Бази Даних";
