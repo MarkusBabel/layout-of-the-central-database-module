@@ -10,7 +10,21 @@ const AppBreadcrumb = () => {
 
   const getRouteName = (pathname, routes) => {
     const currentRoute = routes.find((route) => route.path === pathname)
-    return currentRoute ? currentRoute.name : false
+    if (currentRoute) {
+      switch (currentRoute.name) {
+        case 'Home':
+          return 'Головна';
+        case 'Dashboard':
+          return 'Дошка';
+        case 'Charts':
+          return 'Моніторинг';
+        case 'Widgets':
+          return 'Аналіз';
+        default:
+          return currentRoute.name;
+      }
+    }
+    return false;
   }
 
   const getBreadcrumbs = (location) => {
@@ -33,7 +47,7 @@ const AppBreadcrumb = () => {
 
   return (
     <CBreadcrumb className="my-0">
-      <CBreadcrumbItem href="/">Home</CBreadcrumbItem>
+      <CBreadcrumbItem href="/">Головна</CBreadcrumbItem>
       {breadcrumbs.map((breadcrumb, index) => {
         return (
           <CBreadcrumbItem
