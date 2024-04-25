@@ -38,7 +38,9 @@ const AppSidebar = () => {
       <CSidebarHeader className="border-bottom">
         <CSidebarBrand to="/">
           {/* <CIcon customClassName="sidebar-brand-full" icon={logo} height={32} /> */}
-          <img src="src/assets/brand/LogoName.jpg" alt="LogoName" height="64" style={{ borderRadius: '10px 10px 10px 10px' }} />
+          <a href="https://www.phc.org.ua/pro-centr/usunennya-pravovikh-bareriv/mobilni-programi-sistemi-mio-ta-reaguvannya-na-porushennya-prav">
+            <img src="https://www.phc.org.ua/themes/moz/logo.svg" alt="LogoName" height="64" style={{ borderRadius: '10px 10px 10px 10px' }} />
+          </a>
           <CIcon customClassName="sidebar-brand-narrow" icon={sygnet} height={32} />
         </CSidebarBrand>
         <CCloseButton
